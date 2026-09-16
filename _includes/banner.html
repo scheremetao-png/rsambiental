@@ -1,0 +1,27 @@
+<section id="banner">
+					<header>
+						<h2>
+							{% if page.title %}
+								{{ page.title }}
+							{% else %}
+								RS
+							{% endif %}
+
+							<em>
+								{% if page.subtitle %}
+									{{ page.subtitle }}
+								{% else %}
+									Consultoria Ambiental para o seu Negócio:
+								{% endif %}
+							</em>
+						</h2>
+
+						<h4>
+							{% if page.description %}
+								{{ page.description }}
+							{% else %}
+								Alinhe seu projeto às exigências ambientais de forma segura, estratégica e reduzindo custos
+							{% endif %}
+						</h4>
+					</header>
+</section>

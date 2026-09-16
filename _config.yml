@@ -1,0 +1,19 @@
+# Configurações Gerais do Site
+title: RS Consultor Ambiental
+description: Serviços de consultoria e gestão ambiental.
+url: "https://rsambiental.com.br"
+baseurl: "" # Deixe vazio se usar domínio próprio
+
+# Configuração da Collection de Serviços
+collections:
+  servicos:
+    output: true
+    permalink: /servicos/:path/
+
+# Configurações de Compilação
+markdown: kramdown
+
+# Pastas e arquivos que o Jekyll DEVE ignorar ao compilar o site
+exclude:
+  - .frontmatter
+  - README.md
