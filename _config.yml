@@ -13,6 +13,11 @@ collections:
 # Configurações de Compilação
 markdown: kramdown
 
+# Configuração do compilador Sass/SCSS
+sass:
+  sass_dir: assets/sass
+  style: compressed # Opções: nested, expanded, compact, compressed
+
 # Pastas e arquivos que o Jekyll DEVE ignorar ao compilar o site
 exclude:
   - .frontmatter

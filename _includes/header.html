@@ -1,22 +1,21 @@
 <div id="header">
 
 					<!-- Logo -->
-						<h1><a href="index.html" id="logo">RS <em>Consultoria Ambiental</em></a></h1>
+						<h1><a href="{{ '/index.html' | relative_url }}" id="logo">RS <em>Consultoria Ambiental</em></a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="index.html">Principal</a></li>
+								<li class="current"><a href= "{{ 'index.html' | relative_url }}">Principal</a></li>
 								<li>
-									<a href="servicos.html">Serviços</a>
+									<a href="{{ 'servicos.html' | relative_url }}">Serviços</a>
 									<ul>
-										<li><a href="/licenciamento-ambiental.html">Licenciamento Ambiental</a></li>
-										<li><a href="/estudos-ambientais.html">Estudos Ambientais</a></li>
-										<li><a href="/gestao-de-residuos.html">Gestão de Resíduos</a></li>
-										<li><a href="/outorga-de-uso-da-agua.html">Outorga de Uso da Água</a></li>
-										<li><a href="/treinamentos-e-educacao-ambiental.html">Treinamentos e Educação Ambiental</a></li>
-									
-							</ul>
+										{% for servico in site.servicos %}
+										<li>
+											<a href="{{ servico.url | relative_url }}">{{ servico.title }}</a>
+										</li>
+										{% endfor %}
+									</ul>
 						</nav>
 
 				</div>
