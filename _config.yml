@@ -8,7 +8,7 @@ baseurl: "" # Deixe vazio se usar domínio próprio
 collections:
   servicos:
     output: true
-    permalink: /servicos/:path/
+    permalink: /servicos/:title/
 
 # Configurações de Compilação
 markdown: kramdown
