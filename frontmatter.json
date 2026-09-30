@@ -41,7 +41,11 @@
         {
           "title": "layout",
           "name": "layout",
-          "type": "string"
+          "type": "choice",
+          "options": [
+            "servicos",
+          ],
+          "default": "servicos"
         },
         {
           "title": "subtitle",
@@ -58,6 +62,10 @@
     {
       "title": "_layouts",
       "path": "[[workspace]]/_layouts"
+    },
+    {
+      "title": "_servicos",
+      "path": "[[workspace]]/_servicos"
     }
   ]
 }
