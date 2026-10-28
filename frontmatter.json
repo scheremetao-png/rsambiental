@@ -39,6 +39,11 @@
           "type": "categories"
         },
         {
+          "title": "Introduction",
+          "name": "introduction",
+          "type": "string"
+        },
+        {
           "title": "layout",
           "name": "layout",
           "type": "choice",
